@@ -1,0 +1,638 @@
+@import url("button.css");
+@import url("input.css");
+
+@font-face {
+    font-family: Product Sans;
+    src: url(../fonts/productsans.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #000;
+    --shade-of-gray: #888;
+    --white-color: #FFF;
+    --vivid-orange-color: #F16214;
+    --vivid-one-orange-color: #ed8d58;
+    --shade-gray: #EEE;
+    --placeholders-color: #CCC;
+    --bg-footer-color: #F5F5F5;
+    --box-shadow-color: rgba(0, 0, 0, 0.07);
+}
+
+li {
+    list-style-type: none;
+
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--black-color);
+
+}
+
+
+
+h1 {
+
+    font-size: 65px;
+    line-height: 85px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 49px;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--shade-of-gray);
+}
+
+body {
+    font-family: 'Product Sans';
+    font-style: normal;
+    background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ===========================================section-1========================================= */
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-logo a img {
+
+    width: 10.1em;
+}
+
+.header-menu a {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.header-menu a:hover {
+    color: var(--vivid-orange-color);
+}
+
+.header-menu li+li {
+    margin-left: 30px;
+}
+
+.header-menu-wr {
+    margin: 0 30px 0 162px;
+}
+
+
+.section-home {
+    background-image: url("./../png/product-image.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 62% 81%;
+}
+
+.section-wr {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 4em;
+}
+
+.main-header-block {
+    width: 43%;
+    margin-top: 141px;
+}
+
+.titl-block h1 {
+    max-width: 6.5em;
+    margin-bottom: 0.2em;
+}
+
+.titl-block p {
+    max-width: 37em;
+    line-height: 150%;
+    margin-bottom: 40px;
+
+
+}
+
+.feature {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    box-shadow: 0px 22px 52px var(--box-shadow-color);
+    border-radius: 60px 0px;
+    margin-top: 110px;
+}
+
+.feature div {
+    width: 380px;
+    text-align: center;
+
+}
+
+.feature div img {
+    margin-bottom: 16px;
+}
+
+.feature div p,
+.favorite-food div p {
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--black-color);
+    margin-bottom: 6px;
+
+}
+
+.feature div p+p,
+.favorite-food div p+p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--shade-of-gray);
+    line-height: 160%;
+}
+
+.feature main {
+
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.feature-border {
+    border-right: thick solid #DDD;
+    border-left: thick solid #DDD;
+}
+
+/* ================================================section-2============================= */
+.block-balanced-diet {
+    background-image: url("./../png/image-sushi-sashimi-smoked.png");
+    background-repeat: no-repeat;
+    background-size: 52% 124%;
+}
+
+.block-balanced-diet main {
+    max-width: 570px;
+
+}
+
+.block-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fashion p,
+.services,
+.services-product {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--vivid-orange-color);
+}
+
+.block-right main main {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--shade-of-gray);
+}
+
+.block-right {
+    padding-top: 158px;
+    margin-bottom: 158px
+}
+
+.block-right h2 {
+    margin: 6px 0 45px;
+}
+
+/* ============================================section-3======================================== */
+
+.services,
+.services-product {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services h2,
+.services-product h2 {
+    margin: 6px 0 59px;
+}
+
+.favorite-food {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.favorite-food main {
+    border: 2px solid var(--shade-gray);
+    border-radius: 60px 0px;
+}
+
+.favorite-food main div {
+    width: 80px;
+    height: 80px;
+    background: rgba(241, 98, 20, 0.15);
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 44px;
+    margin-top: 70px;
+
+}
+
+
+
+.favorite-food main div img {
+    padding-top: 30%;
+}
+
+.favorite-food div+div {
+    margin-left: 30px;
+}
+
+.centr-border {
+    background: var(--white-color);
+    box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.1);
+    border-radius: 60px 0px;
+}
+
+.favorite-food div p+p {
+    padding: 22px 20px 72px;
+    font-size: 16px;
+}
+
+/* =================================================section-4======================================= */
+[class^="box-"] {
+    display: grid;
+    align-items: end;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 50px 0px;
+    background-repeat: no-repeat;
+    background-size: 100% 62%;
+
+}
+
+.wrapper p {
+    margin-bottom: 19px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black-color);
+}
+
+.wrapper main:nth-child(1) {
+    text-align: left;
+    margin-left: 19px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--black-color);
+
+}
+
+.wrapper main img {
+    padding-right: 6px;
+    vertical-align: top;
+}
+
+.wrapper p:nth-child(2) {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.wrapper button {
+    width: 100px;
+}
+
+.container-grid {
+    display: grid;
+    gap: 23px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(391px, auto);
+    margin-bottom: 65px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    align-items: end;
+
+}
+
+.wrapper div {
+    display: grid;
+    grid-auto-rows: minmax(28px, auto);
+    align-content: space-around;
+    justify-items: end;
+    margin-right: 19px;
+}
+
+
+
+/* ============================================section-5======================================== */
+.order-bg {
+    background-image: url("./../png/BG-Order-Foods.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-bg h2 {
+    font-size: 40px;
+    line-height: 49px;
+    max-width: 320px;
+    color: var(--white-color)
+}
+
+.order-bg img {
+    max-height: 46em;
+
+}
+
+
+
+.order-bg main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.order-img {
+    display: flex;
+}
+
+.order-but {
+    display: flex;
+    margin-top: 50px;
+}
+
+.order-but div+div {
+    margin-left: 20px;
+}
+
+.order-but div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 220px;
+    height: 80px;
+    background: var(--white-color);
+    border-radius: 13px;
+}
+
+/* .order-but div:nth-child(1) {} */
+.order-but main p {
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 7px;
+    color: var(--black-color);
+}
+
+.order-but main h2 {
+    font-size: 21px;
+    line-height: 13px;
+    color: var(--black-color);
+}
+
+.order-but img {
+    margin-left: 14px;
+}
+
+/* ===========================================section-6=============================================== */
+
+
+.client-says {
+    background-image: url("./../png/vegetable-food-diet.png");
+    background-repeat: no-repeat;
+    background-size: 373px 383px;
+}
+
+.client-says-item {
+    display: flex;
+    margin-bottom: 78px;
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.slider .slick-arrow {
+    font-size: 0;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.client-says-item .slider .slick-arrow {
+    width: 50px;
+    border: 1.5px solid #EEEEEE;
+    border-radius: 10px;
+    background-color: transparent
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 170px;
+    background-image: url(./../png/right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px -3px;
+}
+
+
+.slider .slick-arrow.slick-prev:hover {
+    background-color: var(--vivid-orange-color);
+    background-image: url(./../png/w-right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px -3px;
+}
+
+.slider .slick-arrow.slick-next:hover {
+    background-color: var(--vivid-orange-color);
+    background-image: url(./../png/w-left-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px -3px;
+
+}
+
+.slider .slick-arrow.slick-next:hover {
+    background-color: var(--vivid-orange-color);
+}
+
+.slider .slick-arrow.slick-next {
+    right: 170px;
+    background-image: url(./../png/left-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px -3px;
+}
+
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.user-info main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.user-info h2 {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+/* ================================================= section 7 ================================ */
+
+.bg-burger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(./../png/BG-burger.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.burger-item h2 {
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--white-color);
+    padding-bottom: 15px;
+}
+
+.burger-item p {
+    padding-bottom: 29px;
+}
+
+.bg-burger img {
+    padding-bottom: 50px;
+    padding-right: 84px;
+}
+
+/* =========================================== footer===================================== */
+footer {
+    background-color: var(--bg-footer-color);
+}
+
+.footer-main-wr {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-bottom: 61px;
+}
+
+.footer-main-wr main:last-child {
+    width: 156px;
+    padding-top: 13px;
+}
+
+.footer-main-wr main:first-child {
+    width: 270px;
+}
+
+.footer-main-wr main:nth-child(2) {
+    width: 246px;
+    padding-top: 13px;
+}
+
+.footer-main-wr main:nth-child(3) {
+    width: 151px;
+    padding-top: 13px;
+}
+
+
+.footer-main-wr main p {
+    margin-top: 36px;
+    line-height: 200%;
+}
+
+.footer-main-wr main {
+    padding-left: 30px;
+}
+
+.social-icon.footer {
+    margin-top: 33px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 26px;
+}

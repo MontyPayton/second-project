@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>figma_0906
+    </title>
+</head>
+
+<body>
+    <div class="block">
+        <!-- section 1 -->
+        <section class="section-home">
+            <div class="section-wr">
+                <header>
+                    <div class="header-logo"><a href="#"><img src="png/logo.png"></a></div>
+                    <nav class="header-menu-wr">
+                        <ul class="header-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">How to work</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button>Register</button>
+                </header>
+                <main class="main-header-block">
+                    <div class="titl-block">
+                        <h1>You Can Eat Any Tasty Food You Like.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <button>Get Started<div class="ellipse"></div></button>
+                        <div class="social-icon">
+                            <div class="facebook"><img src="svg/ic-facebook.svg"></div>
+                            <div class="instagram"><img src="svg/ic-instagram.svg"></div>
+                            <div class="twitter"><img src="svg/ic-twitter.svg"></div>
+                            <div class="linkedin"><img src="svg/ic-linkedin.svg"></div>
+                        </div>
+
+                    </div>
+
+                </main>
+                <div class="feature">
+                    <div>
+                        <main>
+                            <img src="svg/icon-time.svg">
+                            <p>Today 10:00am - 09:00pm</p>
+                            <p>Working Time</p>
+                        </main>
+                    </div>
+                    <div>
+                        <main class="feature-border">
+                            <img src="svg/icon-location.svg">
+                            <p>Washington, D.C., DC, USA</p>
+                            <p>Our Location</p>
+                        </main>
+                    </div>
+                    <div>
+                        <main>
+                            <img src="svg/icon-call.svg">
+                            <p>+17602781253</p>
+                            <p>Call Online</p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 2 -->
+        <section class="block-balanced-diet">
+            <div class="section-wr block-right fashion">
+                <main>
+                    <p>How to work</p>
+                    <h2>Food Is An Important Part Of
+                        A Balanced Diet.</h2>
+                    <main>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</main>
+                    <button>Learn More<div class="ellipse"></div></button>
+                </main>
+            </div>
+        </section>
+        <!-- section 3 -->
+        <section class="block-services">
+            <div class="section-wr">
+                <main class="services">
+                    Services
+                    <h2>Why Choose Our Favorite Food</h2>
+                    <div class="favorite-food">
+                        <div>
+                            <main>
+                                <div><img src="svg/Qualityfull Food.svg"></div>
+                                <p>Qualityfull Food</p>
+                                <p>But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and
+                                    praising pain was born.</p>
+                            </main>
+                        </div>
+                        <div>
+                            <main class="centr-border">
+                                <div><img src="svg/Healthy Food.svg"></div>
+                                <p>Healthy Food</p>
+                                <p>But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure
+                                    and praising pain was born.</p>
+                            </main>
+                        </div>
+                        <div>
+                            <main>
+                                <div><img src="svg/Fast Delivery.svg"></div>
+                                <p>Fast Delivery</p>
+                                <p>But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and
+                                    praising pain was born.</p>
+                            </main>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!-- section 4 -->
+        <section class="popular-items">
+            <div class="section-wr">
+                <main class="services-product">Product
+                    <h2>Most Popular Items</h2>
+                    <div class="container-grid" id="apper">
+
+                        <div class="box-first bottom" v-for="m in menu" v-bind:style="m.mM">
+                            <div class="wrapper">
+
+                                <main>
+                                    <p>{{m.product}}</p>
+                                    <button>Add To Card</button>
+                                </main>
+                                <div>
+                                    <main> <img src="svg/star.svg" alt="">{{m.rating}}</main>
+                                    <p>${{m.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="btn-items-foot">See More Product<div class="ellipse"></div></button>
+                </main>
+            </div>
+        </section>
+        <!-- section 5 -->
+        <section class="order-foods">
+            <div class="section-wr order-bg">
+                <main>
+                    <h2>Simple Way To
+                        Order Your Foods</h2>
+                    <div class="order-but">
+                        <div>
+                            <a href="#">
+                                <img src="svg/GooglePlay-icon.svg">
+                            </a>
+                            <main>
+                                <p>GET IN ON</p>
+                                <h2>Google Play</h2>
+                            </main>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="svg/AppleStore-icon.svg">
+                            </a>
+                            <main>
+                                <p>Download on the</p>
+                                <h2>Apple Store</h2>
+                            </main>
+                        </div>
+                    </div>
+
+                </main>
+                <div class="order-img">
+                    <img src="png/screen.png" alt="#">
+                </div>
+            </div>
+        </section>
+        <!-- section 6 -->
+        <section class="client-says">
+            <div class="section-wr">
+                <main class="services user-slid ">Testimonials
+                    <h2>Our Happy Client Says</h2>
+                    <div class="client-says-item">
+                        <div class="slider">
+                            <div>
+                                <div class="user-info">
+                                    <img src="png/photo-user.png" alt="">
+                                    <main>
+                                        <h2>Williams Johon</h2>
+                                        <p>CEO & Co-Founder</p>
+                                    </main>
+                                </div>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor."</p>
+                            </div>
+                            <div>
+                                <div class="user-info">
+                                    <img src="png/photo-user.png" alt="">
+                                    <main>
+                                        <h2>Williams Johon</h2>
+                                        <p>CEO & Co-Founder</p>
+                                    </main>
+                                </div>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor."</p>
+                            </div>
+                        </div>
+
+                        <img src="png/lebanese-cuisine-pita.png" alt="">
+                    </div>
+
+                </main>
+            </div>
+        </section>
+        <!-- /section 6 -->
+        <!-- section 7 -->
+        <section>
+            <div class="section-wr bg-burger">
+
+                <img src="png/burger.png" alt="">
+                <div class="burger-item">
+                    <h2>Subcribe To Our Newsletter</h2>
+                    <p>Email subsription is an opportunity to recevie an interting newsletter
+                        from a website. once a user fills in the subscription from on a website.</p>
+                    <form action="">
+                        <input type="email" placeholder="Type your email...">
+                        <button type="submit">SUBCRIBE</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /section 7 -->
+        <!-- section 8(footer) -->
+        <footer>
+            <div class="section-wr">
+                <div class="footer-main-wr">
+                    <main>
+                        <a href="#"><img src="png/logo.png"></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <div class="social-icon footer">
+                            <div class="facebook"><img src="svg/ic-facebook.svg"></div>
+                            <div class="instagram"><img src="svg/ic-instagram.svg"></div>
+                            <div class="twitter"><img src="svg/ic-twitter.svg"></div>
+                            <div class="linkedin"><img src="svg/ic-linkedin.svg"></div>
+                        </div>
+                    </main>
+                    <main>
+                        <h3>Opening Restaurant</h3>
+                        <p>Sa - We: 09:00am - 10:00pm
+                            Thursday: 09:00am - 05:00pm
+                            Friday: Closed</p>
+                    </main>
+                    <main>
+                        <h3>User Link</h3>
+                        <p>About Us
+                            Contact Us
+                            Order Delivery
+                            Payment & Tax
+                            Terms of Services</p>
+                    </main>
+                    <main>
+                        <h3>Contact Us</h3>
+                        <p>543 Country Club Ave,
+                            NC 27587, London, UK
+                            +1259 6541120</p>
+                        <form action="">
+                            <input type="email" placeholder="Enter your email...">
+                            <input type="image" src="png/arrow.png" alt="Кнопка">
+                        </form>
+                    </main>
+                </div>
+                <hr>
+                <p class="copyright">Copyrights© 2021 Food Bill All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

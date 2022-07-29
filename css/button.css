@@ -1,0 +1,108 @@
+button {
+    height: 40px;
+    background-color: var(--vivid-orange-color);
+    color: var(--white-color);
+    border-radius: 54px;
+    border: none;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+}
+
+button:hover {
+    background-color: var(--vivid-one-orange-color);
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+header button {
+    border-radius: 120px;
+    width: 80px;
+    font-weight: 400;
+    font-size: 13px;
+    height: 30px;
+}
+
+.titl-block button,
+.block-balanced-diet button,
+.btn-items-foot {
+
+    font-size: 16px;
+    line-height: 287%;
+    width: 170px;
+    height: 50px;
+}
+
+.services button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 280%;
+    margin-bottom: 100px;
+}
+
+
+.titl-block button::before,
+.block-balanced-diet button::before,
+.services button::before,
+.btn-items-foot::before {
+    content: "";
+    position: relative;
+    float: right;
+    margin: 4px 0px;
+    width: 40px;
+    height: 40px;
+    background-image: url(./../svg/arrow.svg);
+    border-radius: 54px;
+}
+
+.user-slid button::before {
+    background-image: none;
+}
+
+
+.social-icon {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    max-width: 15em;
+}
+
+.social-icon div {
+    width: 40px;
+    height: 40px;
+    background: rgba(241, 98, 20, 0.15);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-icon div:hover,
+.favorite-food main div:hover {
+    background: rgba(241, 98, 20, 0.25);
+    cursor: pointer;
+
+}
+
+.social-icon div img {
+    margin: 0.85em;
+
+}
+
+.block-right button {
+    margin-top: 29px;
+}
+
+.btn-items-foot {
+    margin-bottom: 100px;
+    width: 200px;
+}
+
+form button {
+    border-radius: 13px;
+    width: 120px;
+    height: 50px;
+}
